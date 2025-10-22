@@ -3,7 +3,7 @@ services:
     name: shopease-frontend
     env: node
     buildCommand: npm install && npm run build
-    startCommand: npx serve -s build -l tcp://0.0.0.0:$PORT
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
